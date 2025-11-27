@@ -1,210 +1,87 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mening yutuqlarim</title>
-<style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: #f9f9f9;
-        overflow-x: hidden;
-    }
-    /* YANGI: Navigatsiya Menyusi Stili */
-    nav {
-        background: rgba(255, 255, 255, 0.95);
-        position: sticky; /* Ekranda doimiy turish uchun */
-        top: 0;
-        z-index: 1000;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        padding: 15px 20px;
-        text-align: center;
-    }
-    nav a {
-        text-decoration: none;
-        color: #333;
-        margin: 0 15px;
-        font-weight: 600;
-        transition: color 0.3s;
-    }
-    nav a:hover {
-        color: #6a11cb; /* Header rangi bilan moslashtirish */
-    }
-
-    header {
-        background: linear-gradient(135deg, #6a11cb, #2575fc);
-        color: white;
-        padding: 50px 20px;
-        text-align: center;
-    }
-    header h1 {
-        margin: 0;
-        font-size: 3em;
-        animation: fadeInDown 1s ease forwards;
-    }
-    header p {
-        font-size: 1.2em;
-        margin-top: 10px;
-        animation: fadeInUp 1s ease forwards;
-        animation-delay: 0.5s;
-    }
-    @keyframes fadeInDown {
-        0% {opacity: 0; transform: translateY(-50px);}
-        100% {opacity: 1; transform: translateY(0);}
-    }
-    @keyframes fadeInUp {
-        0% {opacity: 0; transform: translateY(50px);}
-        100% {opacity: 1; transform: translateY(0);}
-    }
-    section {
-        padding: 80px 20px;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-    h2 {
-        text-align: center;
-        margin-bottom: 40px;
-        font-size: 2.2em;
-        color: #333;
-    }
-    .projects, .websites {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-    }
-    .card {
-        background: white;
-        border-radius: 15px;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-        padding: 20px;
-        text-decoration: none;
-        color: inherit;
-        transition: transform 0.3s, box-shadow 0.3s;
-        display: block;
-    }
-    .card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 12px 30px rgba(0,0,0,0.2);
-    }
-    /* YANGI: Skills stili */
-    .skills-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-        font-size: 1.1em;
-    }
-    .skill-item {
-        background: white;
-        padding: 10px 20px;
-        border-radius: 5px;
-        border: 1px solid #ddd;
-        transition: background 0.3s;
-    }
-    .skill-item:hover {
-        background: #eef;
-        border-color: #6a11cb;
-    }
-
-    /* YANGI: Kontakt stili */
-    #contact {
-        text-align: center;
-        background: #f0f0f0;
-    }
-    .contact-links a {
-        display: inline-block;
-        margin: 0 15px;
-        text-decoration: none;
-        color: #6a11cb;
-        font-weight: 600;
-        font-size: 1.1em;
-    }
-    .contact-links a:hover {
-        text-decoration: underline;
-    }
-
-    footer {
-        background: #333;
-        color: white;
-        text-align: center;
-        padding: 30px 20px;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firdavs: Mening yutuqlarim</title>
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
 
 <nav>
-    <a href="#websites">Websaytlar</a>
-    <a href="#projects">Loyihalar</a>
-    <a href="#skills">Qobiliyatlar</a>
-    <a href="#contact">Aloqa</a>
+    <div class="nav-container">
+        <a href="#websites">Websaytlar</a>
+        <a href="#projects">Loyihalar</a>
+        <a href="#skills">Qobiliyatlar</a>
+        <a href="#contact">Aloqa</a>
+    </div>
 </nav>
 
 <header>
-    <h1>Mening yutuqlarim</h1>
-    <p>Web Developer & Designer</p>
+    <h1>Mening yutuqlarim</h1>
+    <p>Web Developer & Designer</p>
 </header>
 
-<section id="websites">
-    <h2>Website</h2>
-    <div class="websites">
-        <a href="website1.html" class="card">
-            <h3>Website 1</h3>
-            <p>My 1-website.</p>
-        </a>
-        <a href="website2.html" class="card">
-            <h3>Website 2</h3>
-            <p>My 2-website.</p>
-        </a>
-        <a href="website3.html" class="card">
-            <h3>Website 3</h3>
-            <p>My 3-website.</p>
-        </a>
-    </div>
+<section id="websites" class="content-section">
+    <h2>💻 Vebsaytlar</h2>
+    <div class="grid-container">
+        <a href="website1.html" class="card">
+            <h3>Website 1</h3>
+            <p>Mening birinchi to'liq veb-saytim.</p>
+        </a>
+        <a href="website2.html" class="card">
+            <h3>Website 2</h3>
+            <p>Interaktiv elementlarga ega loyiha.</p>
+        </a>
+        <a href="website3.html" class="card">
+            <h3>Website 3</h3>
+            <p>Adaptiv dizayn tamoyillari asosida.</p>
+        </a>
+    </div>
 </section>
 
-<section id="projects">
-    <h2>Project</h2>
-    <div class="projects">
-        <a href="project1.html" class="card">
-            <h3>Project 1</h3>
-            <p>My 1-project.</p>
-        </a>
-        <a href="project2.html" class="card">
-            <h3>Project 2</h3>
-            <p>My 2-project.</p>
-        </a>
-        <a href="project3.html" class="card">
-            <h3>Project 3</h3>
-            <p>My 3-project.</p>
-        </a>
-    </div>
+<section id="projects" class="content-section gray-bg">
+    <h2>🛠 Loyihalar</h2>
+    <div class="grid-container">
+        <a href="project1.html" class="card">
+            <h3>Project 1</h3>
+            <p>Kalkulyator (JavaScript). Tezlikka optimallashtirilgan.</p>
+        </a>
+        <a href="project2.html" class="card">
+            <h3>Project 2</h3>
+            <p>Landing Page dizayni. Mijozlar uchun yaratilgan.</p>
+        </a>
+        <a href="project3.html" class="card">
+            <h3>Project 3</h3>
+            <p>To'lov tizimi interfeysi. Xavfsizlikka e'tibor berilgan.</p>
+        </a>
+    </div>
 </section>
 
-<section id="skills">
-    <h2>Mening qobiliyatlarim</h2>
+<section id="skills" class="content-section">
+    <h2>🧠 Mening Qobiliyatlarim</h2>
     <div class="skills-grid">
         <div class="skill-item">HTML5</div>
         <div class="skill-item">CSS3</div>
         <div class="skill-item">JavaScript</div>
-        <div class="skill-item">Bootstrap</div>
+        <div class="skill-item">Bootstrap / Tailwind</div>
         <div class="skill-item">Responsive Design</div>
-        </div>
+        <div class="skill-item">Git / GitHub</div>
+    </div>
 </section>
 
-<section id="contact">
-    <h2>Aloqa</h2>
+<section id="contact" class="content-section gray-bg">
+    <h2>📞 Aloqa</h2>
     <p>Menga yozing, loyiha g'oyalaringizni muhokama qilaylik!</p>
     <div class="contact-links">
-        <a href="mailto:sizningpochta@example.com">Email orqali</a>
-        <a href="https://t.me/sizningtelegramingiz">Telegram</a>
-        <a href="https://github.com/sizninggithubingiz">GitHub</a>
+        <a href="mailto:sizningpochta@example.com" class="link-button">Email orqali</a>
+        <a href="https://t.me/sizningtelegramingiz" class="link-button telegram">Telegram</a>
+        <a href="https://github.com/sizninggithubingiz" class="link-button github">GitHub</a>
     </div>
 </section>
 
 <footer>
-    &copy; 2025 Firdavs. He's kind boy. This web page made by Firdavs. It's all about him.
+    &copy; 2025 Firdavs. He's kind boy. This web page made by Firdavs. It's all about him.
 </footer>
 
 </body>
