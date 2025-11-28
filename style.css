@@ -17,14 +17,15 @@ color: #333;
 
 /* Navbar */
 nav {
-background: linear-gradient(to right, #ff6a00, #ee0979, #ff6a00, #ee0979);
-background-size: 400% 400%;
-animation: gradientBG 10s ease infinite;
-padding: 15px 0;
-position: sticky;
-top: 0;
-z-index: 1000;
+  background: linear-gradient(45deg, #1e3c72, #2a5298, #1e3c72, #2a5298);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
+
 
 nav .nav-container {
 display: flex;
@@ -177,5 +178,6 @@ animation: gradientBG 12s ease infinite;
 color: #fff;
 font-weight: bold;
 }
+
 
 
