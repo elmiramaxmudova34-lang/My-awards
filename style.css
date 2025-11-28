@@ -1,182 +1,169 @@
-/* Asosiy uslublar */
+/* Umumiy tanlovlar */
 body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f4f7f9; /* Engil fon */
-    color: #333;
-    line-height: 1.6;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin: 0;
+padding: 0;
+background: linear-gradient(135deg, #fdfbfb, #ebedee);
+color: #333;
 }
 
-/* Navigatsiya Menyusi */
+/* Navbar */
 nav {
-    background: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+background: #4e54c8;
+background: linear-gradient(to right, #8f94fb, #4e54c8);
+padding: 15px 0;
+position: sticky;
+top: 0;
+z-index: 1000;
 }
-.nav-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 15px 20px;
-    text-align: center;
+
+nav .nav-container {
+display: flex;
+justify-content: center;
+gap: 30px;
 }
+
 nav a {
-    text-decoration: none;
-    color: #555;
-    margin: 0 18px;
-    font-weight: 600;
-    font-size: 1.05em;
-    transition: color 0.3s;
+color: #fff;
+text-decoration: none;
+font-weight: bold;
+padding: 8px 15px;
+border-radius: 8px;
+transition: background 0.3s, transform 0.2s;
 }
+
 nav a:hover {
-    color: #007bff; /* Zamonaviy ko'k rang */
+background: rgba(255, 255, 255, 0.2);
+transform: scale(1.1);
 }
 
 /* Header */
 header {
-header {
-    background: linear-gradient(135deg, #007bff, #0056b3); /* Statik gradient */
-    /* ... */
-} /* Chuqurroq ko'k gradient */
-    color: white;
-    padding: 80px 20px;
-    text-align: center;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+text-align: center;
+padding: 80px 20px;
+background: linear-gradient(to right, #ffecd2, #fcb69f);
+color: #333;
 }
+
 header h1 {
-    margin: 0;
-    font-size: 3.5em;
-    font-weight: 700;
+font-size: 3em;
+margin-bottom: 10px;
 }
+
 header p {
-    font-size: 1.3em;
-    margin-top: 10px;
-    opacity: 0.9;
+font-size: 1.5em;
+color: #555;
 }
 
-/* Bo'limlar */
+/* Sections */
 .content-section {
-    padding: 80px 20px;
-    max-width: 1000px;
-    margin: 0 auto;
+padding: 60px 20px;
+text-align: center;
 }
+
+.content-section h2 {
+font-size: 2.5em;
+margin-bottom: 40px;
+color: #4e54c8;
+}
+
+/* Gray background sections */
 .gray-bg {
-    background: #eef3f7; /* Kulrang fon */
-}
-h2 {
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 2.5em;
-    color: #007bff;
-    border-bottom: 3px solid #007bff;
-    display: inline-block;
-    padding-bottom: 5px;
-    margin-left: 50%;
-    transform: translateX(-50%);
+background: #f5f5f5;
 }
 
-/* Kartochkalar (Vebsaytlar/Loyihalar) */
+/* Grid for websites and projects */
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 30px;
 }
+
 .card {
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    padding: 30px;
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.3s, box-shadow 0.3s;
-    border-left: 5px solid #007bff; /* To'q rangli chegara */
+background: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
+padding: 25px 20px;
+width: 250px;
+border-radius: 20px;
+text-decoration: none;
+color: #333;
+box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+transition: transform 0.3s, box-shadow 0.3s;
 }
+
 .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
-    border-left-color: #0056b3;
+transform: translateY(-10px);
+box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
+
 .card h3 {
-    margin-top: 0;
-    color: #007bff;
+margin-bottom: 15px;
+color: #fff;
 }
+
 .card p {
-    font-size: 0.95em;
-    color: #666;
+color: #fff;
 }
 
-/* Qobiliyatlar (Skills) */
+/* Skills section */
 .skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    font-size: 1.1em;
-}
-.skill-item {
-    background: white;
-    padding: 10px 20px;
-    border-radius: 20px; /* Yumaloq qirralar */
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    transition: background 0.3s, border-color 0.3s;
-    font-weight: 500;
-}
-.skill-item:hover {
-    background: #007bff;
-    color: white;
-    border-color: #007bff;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 20px;
 }
 
-/* Aloqa (Contact) */
-#contact {
-    text-align: center;
+.skill-item {
+background: linear-gradient(to right, #43e97b, #38f9d7);
+padding: 15px 25px;
+border-radius: 15px;
+font-weight: bold;
+color: #fff;
+transition: transform 0.3s;
 }
+
+.skill-item:hover {
+transform: scale(1.1);
+}
+
+/* Contact links */
 .contact-links {
-    margin-top: 30px;
+display: flex;
+justify-content: center;
+gap: 25px;
+margin-top: 30px;
+flex-wrap: wrap;
 }
+
 .link-button {
-    display: inline-block;
-    padding: 12px 25px;
-    margin: 0 10px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: 600;
-    transition: background 0.3s, transform 0.2s;
+background: #ff6a00;
+background: linear-gradient(to right, #ee0979, #ff6a00);
+color: #fff;
+text-decoration: none;
+padding: 12px 25px;
+border-radius: 15px;
+font-weight: bold;
+transition: transform 0.3s, box-shadow 0.3s;
 }
+
 .link-button:hover {
-    transform: translateY(-2px);
+transform: scale(1.1);
+box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
+
 .link-button.telegram {
-    background: #0088cc;
-    color: white;
+background: linear-gradient(to right, #37aee2, #1e96c8);
 }
-.link-button.telegram:hover {
-    background: #006fa4;
-}
+
 .link-button.github {
-    background: #333;
-    color: white;
-}
-.link-button.github:hover {
-    background: #000;
-}
-.link-button.email {
-    background: #f0f0f0;
-    color: #333;
-    border: 1px solid #ccc;
-}
-.link-button.email:hover {
-    background: #e0e0e0;
+background: linear-gradient(to right, #333, #555);
 }
 
 /* Footer */
 footer {
-    background: #333;
-    color: #bbb;
-    text-align: center;
-    padding: 20px 20px;
-    font-size: 0.9em;
+text-align: center;
+padding: 30px 20px;
+background: linear-gradient(to right, #8f94fb, #4e54c8);
+color: #fff;
+font-weight: bold;
 }
-
